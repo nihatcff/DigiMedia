@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36414.22 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DigiMedia", "DigiMedia\DigiMedia.csproj", "{9A9CD8B4-7984-44FD-B3CB-C7421CD7F708}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9A9CD8B4-7984-44FD-B3CB-C7421CD7F708}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A9CD8B4-7984-44FD-B3CB-C7421CD7F708}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A9CD8B4-7984-44FD-B3CB-C7421CD7F708}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A9CD8B4-7984-44FD-B3CB-C7421CD7F708}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {656043DA-5F8E-4F7A-8584-313910A5FCD2}
+	EndGlobalSection
+EndGlobal
