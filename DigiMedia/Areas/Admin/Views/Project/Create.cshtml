@@ -1,0 +1,43 @@
+﻿@model ProjectCreateVM
+
+<div class="container">
+	<div class="row">
+
+        <form method="post" enctype="multipart/form-data">
+            <div><h2>Add A New Project</h2></div>
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="mb-3">
+                <label asp-for="Name" class="form-label">Name</label>
+                <input asp-for="Name" class="form-control" placeholder="Enter Name">
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="Image" class="form-label">Image</label>
+                <input asp-for="Image" class="form-control">
+                <span asp-validation-for="Image" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="CategoryId" class="form-label">Image</label>
+                <select asp-for="CategoryId">
+                    <option selected disabled value="">--Select Category--</option>
+                    @foreach (Category category in ViewBag.Categories)
+                            {
+                                <option value="@category.Id">@category.Name</option>
+                            }
+                </select>
+                <span asp-validation-for="CategoryId" class="text-danger"></span>
+            </div>
+          
+            <button type="submit" class="btn btn-primary">Create</button>
+            <a asp-action="Index" class="btn btn-danger">Cancel</a>
+        </form>
+
+	</div>
+</div>
+
+@section Scripts{
+    <partial name="_ValidationScriptsPartial"></partial>
+}
